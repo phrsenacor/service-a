@@ -1,0 +1,15 @@
+name: Schoen deployen
+
+on: 
+  push:
+    branches: ["main"]
+    
+    
+jobs:
+  build deplpoy: 
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+    - run: npm install
